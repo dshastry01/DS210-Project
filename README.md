@@ -1,1 +1,11 @@
 # DS210-Project
+
+For this project, I decided to use a social networks data set from the Stanford University Dataset Collection (https://snap.stanford.edu/data/index.html#socnets). Specifically, I used the social circles from Twitter data set that had 81,306 nodes and 1,768,149 edges. The file that I ended up using was the one called twitter_combined.txt.gz from the link https://snap.stanford.edu/data/ego-Twitter.html. The project topic I picked was degree distribution. So essentially, my code had to analyze the degree distribution of this Twitter social network graph. The first algorithm I used to do this was a read_file function. This function read the data from the Twitter social network file and returned a vector with the edges. The next function was a clean_data function that took that vector and created an adjacent list that represents the graph but also returns the number of nodes. After that was the degree_distribution function that took the adjacent list and calculated the degree distribution of the graph. Finally, I created an average_degree function that calculated the average degree of the nodes and then I created a test function to test the average degree function. The output of my code displays the. 
+
+One piece of interested information that I found was that the average degree was 33.01854721668757. This means that the average user in the twitter data set is connected to roughly 33 other people. I found this interesting because I would have expected it to be higher. I think I had this assumption and expectation that it would be higher because in my head I was comparing twitter to Instagram. The only forms of social media that I have are Instagram and Snapchat. However, I did not consider the differences between the different types of social media platforms. There is more of an emphasis on followers on Instagram and less so on Twitter. Therefore, the lower than expected average degree makes sense.
+
+External Sources used to help me with my project:
+https://doc.rust-lang.org/std/cmp/struct.Reverse.html
+https://stackoverflow.com/questions/64381478/use-stdcmpreverse-with-binary-search-by-key
+https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/testing.html
+![image](https://user-images.githubusercontent.com/132860299/236719710-80bc2e6c-7435-47a1-88e1-cc3646996791.png)
